@@ -1,0 +1,87 @@
+#artigo {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  color: #222;
+}
+
+#artigo .section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#artigo .section-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+
+/* ======== CONTAINER ======== */
+.artigo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ======== BLOCOS ======== */
+.artigo-bloco {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 1.6;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* tudo em coluna */
+  gap: 20px;
+}
+
+/* ======== TÍTULOS E PARÁGRAFOS ======== */
+.artigo-bloco h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.artigo-bloco p {
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* ======== IMAGENS ======== */
+.artigo-bloco img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* ======== GARANTE QUE O TEXTO NÃO SUMA ======== */
+.artigo-bloco h4,
+.artigo-bloco p {
+  flex: none;
+  min-width: 200px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ======== MOBILE (continua igual) ======== */
+@media (max-width: 767px) {
+  .artigo-container {
+    gap: 30px;
+  }
+
+  .artigo-bloco {
+    padding: 20px;
+    gap: 15px;
+  }
+}

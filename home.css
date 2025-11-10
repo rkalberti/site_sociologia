@@ -1,0 +1,139 @@
+/* Home - geral */
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 80vh;
+  background-color: #fff; /* fundo branco */
+  color: #333; /* texto escuro */
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.home-container {
+  max-width: 800px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Título */
+.home-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  position: relative;
+  z-index: 2;
+}
+
+.home-title .highlight {
+  display: block;
+  color: #c0392b; /* vermelho */
+  font-size: 3.5rem;
+}
+
+/* Descrição */
+.home-description {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  position: relative;
+  z-index: 2;
+}
+
+/* Botão */
+.home-btn {
+  text-decoration: none;
+  background-color: #c0392b;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+  position: relative;
+  z-index: 2;
+}
+
+.home-btn:hover {
+  background-color: #e74c3c;
+  transform: scale(1.05);
+}
+
+/* Linha decorativa */
+.decorative-line {
+  width: 60px;
+  height: 4px;
+  background-color: #c0392b;
+  margin: 20px auto 0;
+  border-radius: 2px;
+  z-index: 2;
+  position: relative;
+}
+
+/* Círculos decorativos */
+.decorative-circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #c0392b;
+  opacity: 0.08;
+  animation: pulse 6s ease-in-out infinite;
+}
+
+.circle-1 {
+  width: 150px;
+  height: 150px;
+  top: -50px;
+  left: -50px;
+}
+
+.circle-2 {
+  width: 100px;
+  height: 100px;
+  top: 40%;
+  right: -40px;
+}
+
+.circle-3 {
+  width: 200px;
+  height: 200px;
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Animação dos círculos */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.08; }
+  50% { transform: scale(1.1); opacity: 0.12; }
+}
+
+/* Animação de entrada do conteúdo */
+.home-title,
+.home-description,
+.home-btn {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+.home-title { animation-delay: 0.2s; }
+.home-description { animation-delay: 0.5s; }
+.home-btn { animation-delay: 0.8s; }
+
+@keyframes fadeInUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .home-title { font-size: 2.2rem; }
+  .home-title .highlight { font-size: 2.5rem; }
+  .home-description { font-size: 1rem; }
+  .home-btn { padding: 12px 25px; font-size: 0.9rem; }
+
+  .circle-1 { width: 100px; height: 100px; top: -30px; left: -20px; }
+  .circle-2 { width: 70px; height: 70px; top: 45%; right: -20px; }
+  .circle-3 { width: 150px; height: 150px; bottom: -50px; left: 50%; transform: translateX(-50%); }
+}

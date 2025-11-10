@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="linhadotempo.css">
+  <link rel="stylesheet" href="mapa.css">
+  <link rel="stylesheet" href="style.scss">
+  <link rel="stylesheet" href="artigo.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>SOCIOLOGIA</title>
+
+</head>
+
+<body>
+<header>
+  <nav id="navbar">
+  <i class="fa-solid fa-film" id="nav_logo">Sociologia</i>
+      
+  <ul id="nav_list">
+    <li class="nav-item active">
+      <a href="#home">Início</a>
+    </li>
+    <li class="nav-item">
+      <a href="#artigo">Artigo</a>
+    </li>
+    <li class="nav-item">
+      <a href="#linhadotempo">Linha do tempo</a>
+    </li>
+        <li class="nav-item">
+      <a href="#mapa">Mapa Interativo</a>
+    </li>
+  </ul>
+  
+  <button id="mobile_btn">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  </nav>
+  
+  <div id="mobile_menu">
+      <ul id="mobile_nav_list">
+    <li class="nav-item">
+      <a href="#home">Início</a>
+    </li>
+    <li class="nav-item">
+      <a href="#artigo">Artigo</a>
+    </li>
+    <li class="nav-item">
+      <a href="#linhadotempo">Linha do tempo</a>
+    </li>
+        <li class="nav-item">
+      <a href="#mapa">Mapa Interativo</a>
+    </li>
+  </ul>
+  
+  </div>
+</header>
+
+<main id="content">
+<section id="home">
+  <div class="home-container">
+    <h1 class="home-title">
+      Indústria Cultural
+      <span class="highlight">Sociologia</span>
+    </h1>
+    <p class="home-description">
+      Bem-vindo ao nosso portal de Sociologia! Explore artigos, linha do tempo e mapas interativos sobre a indústria cultural no Brasil.
+    </p>
+    <a href="#artigo" class="home-btn">Ver Artigo</a>
+
+    <div class="decorative-circle circle-1"></div>
+    <div class="decorative-circle circle-2"></div>
+    <div class="decorative-circle circle-3"></div>
+    <div class="decorative-line"></div>
+  </div>
+</section>
+</main>
+
+<section id="artigo">
+  <h2 class="section-title">Artigo</h2>
+  <h3 class="section-subtitle">Indústria cultural no Brasil</h3>
+  <div class="artigo-container">
+      <div class="artigo-bloco">
+        <img class="artigo-img-top" src="vandre.png" alt="Festival da Canção 1968">
+        <p>
+          A expressão “indústria cultural” descreve a produção em massa de bens simbólicos (música, cinema, TV, publicidade) orientada por lógicas de mercado e padronização, que transforma cultura em mercadoria. No Brasil, esse processo se acelera com a difusão da rádio e da televisão nas décadas de 1950–1970, quando produtos culturais passaram a atingir audiências nacionais e a gerar grandes cadeias industriais (gravadoras, emissoras, estúdios). Ao mesmo tempo, formas populares — como samba, bossa nova e a MPB — convivem com produtos industrializados, ora resistindo, ora sendo apropriados pelo mercado.
+        </p>
+  
+        <p>
+          A ditadura militar (1964–1985) interferiu nesse campo através da censura e do controle da radiodifusão, moldando o que podia circular e aumentando a atuação das grandes empresas de mídia. Hoje, plataformas digitais e conglomerados de mídia mantêm estruturas que combinam economia de escala com personalização algorítmica, aprofundando debates sobre diversidade cultural e concentração. Políticas públicas e iniciativas locais são essenciais para ampliar o acesso e contrariar desigualdades regionais no consumo cultural.
+        </p>
+      </div>
+  
+      <div class="artigo-bloco">
+        <img src="Frankfurt.jpg" alt="">
+        <h4>Escola de Frankfurt</h4>
+        <p>
+          A Escola de Frankfurt foi um grupo de pensadores marxistas críticos sediado na Universidade de Frankfurt (Alemanha), que produziu reflexões sobre cultura, racionalidade e dominação a partir das décadas de 1920–1940. Theodor Adorno e Max Horkheimer cunharam a expressão “indústria cultural” para denunciar como a cultura de massa padroniza gostos, anestesia a crítica e reproduz a ordem capitalista.
+        </p>
+        <p>
+          A influência desses autores no Brasil ocorre por meio de traduções, estudos universitários e recepções críticas a partir dos anos 1950–1970, quando intelectuais e professores introduziram a teoria crítica nos cursos de sociologia, filosofia e comunicação. Hoje a Escola de Frankfurt é referência para analisar mídia, publicidade, consumo cultural e indústrias criativas, mas também é debatida e atualizada por autores que apontam limites e novas mediações tecnológicas.
+        </p>
+      </div>
+  
+      <div class="artigo-bloco">
+        <img class="artigo-img-top" src="radio.jpg" alt="Rádio antiga no Brasil">
+        <h4>Consumo e mídia</h4>
+        <p>
+          Consumo cultural é um ato social que combina preferências pessoais, recursos econômicos e poder simbólico; ele não é neutro: reflete desigualdades de classe, raça, região e acesso à educação. No Brasil, estudos mostram que o padrão de consumo de bens culturais (ir a museus, teatro, cinema, comprar livros) está fortemente correlacionado com renda e escolaridade, com amplas diferenças entre regiões e classes sociais.
+        </p>
+        <p>
+          A mídia — televisão, rádio, internet, plataformas de streaming — molda agendas culturais e comerciais, produzindo públicos e criando tendências de consumo que muitas vezes reproduzem estereótipos e concentração. Ao mesmo tempo, formas de resistência e apropriação popular (festivais locais, rádios comunitárias, produções independentes) mostram que consumo também pode ser espaço de disputa e criação de identidades.
+        </p>
+      </div>
+  
+      <div class="artigo-bloco">
+        <img class="artigo-img-side-right" src="chicobuarque.jpg" alt="Cálice - Chico Buarque">
+        <p>
+          A indústria cultural, analisada pela lente da Escola de Frankfurt, revela como bens simbólicos — músicas, programas televisivos, anúncios — passam a ser produzidos em escala industrial, padronizados e vendidos como entretenimento. No Brasil, essa dinâmica foi especialmente visível nas décadas de 1960 e 1970: a emergência da MPB como produto cultural nacional, a consolidação das grandes gravadoras e a expansão das redes de televisão criaram circuitos econômicos que levaram a cultura para audiências massivas, mas também a sujeitar artistas à censura e aos interesses comerciais.
+        </p>
+        <p>
+          Exemplos brasileiros mostram essas tensões: canções censuradas pela ditadura (como “Cálice” e “Pra Não Dizer que Não Falei das Flores”) viraram símbolos de resistência. Hoje, plataformas digitais e conglomerados de mídia reconfiguram essas relações, ampliando o alcance e personalizando o consumo.
+        </p>
+      </div>
+  
+    </div>
+  </section>
+
+<section id="linhadotempo">
+  <h2 class="section-title">Linha do tempo</h2>
+  <h3 class="section-subtitle">Momentos importantes da indústria cultural no Brasil</h3>
+
+  <section class="cd-h-timeline js-cd-h-timeline margin-bottom-md">
+    <div class="cd-h-timeline__container container">
+      <div class="cd-h-timeline__dates">
+        <div class="cd-h-timeline__line">
+          <ol>
+            <li><a href="#0" data-date="01/01/1930" class="cd-h-timeline__date cd-h-timeline__date--selected">1930</a></li>
+            <li><a href="#0" data-date="01/01/1950" class="cd-h-timeline__date">1950</a></li>
+            <li><a href="#0" data-date="01/01/1960" class="cd-h-timeline__date">1960–1970</a></li>
+            <li><a href="#0" data-date="01/01/1980" class="cd-h-timeline__date">1980</a></li>
+            <li><a href="#0" data-date="01/01/1990" class="cd-h-timeline__date">1990</a></li>
+            <li><a href="#0" data-date="01/01/2000" class="cd-h-timeline__date">2000</a></li>
+            <li><a href="#0" data-date="01/01/2010" class="cd-h-timeline__date">2010</a></li>
+            <li><a href="#0" data-date="01/01/2020" class="cd-h-timeline__date">2020</a></li>
+          </ol>
+          <span class="cd-h-timeline__filling-line" aria-hidden="true"></span>
+        </div>
+      </div>
+
+      <ul>
+        <li><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--prev cd-h-timeline__navigation--inactive">Prev</a></li>
+        <li><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--next">Next</a></li>
+      </ul>
+    </div>
+
+    <div class="cd-h-timeline__events">
+      <ol>
+        <li class="cd-h-timeline__event cd-h-timeline__event--selected text-component">
+          <div class="cd-h-timeline__event-content container">
+            <h2>Início da radiodifusão comercial</h2>
+            <em>1930</em>
+            <p>O rádio se populariza e se torna o principal meio de informação e entretenimento. Surgem programas de auditório e radionovelas, marcando o começo da indústria cultural no país.</p>
+          </div>
+        </li>
+
+        <li class="cd-h-timeline__event text-component">
+          <div class="cd-h-timeline__event-content container">
+            <h2>Chegada da televisão ao Brasil</h2>
+            <em>1950</em>
+            <p>A TV Tupi é inaugurada em São Paulo, trazendo uma nova forma de consumo cultural e transformando artistas e programas em fenômenos nacionais.</p>
+          </div>
+        </li>
+
+        <li class="cd-h-timeline__event text-component">
+          <div class="cd-h-timeline__event-content container">
+            <h2>Expansão da música popular e da TV</h2>
+            <em>1960–1970</em>
+            <p>A música popular brasileira (MPB) ganha destaque com artistas como Caetano Veloso e Gilberto Gil. As telenovelas e festivais televisivos tornam-se parte do cotidiano.</p>
+          </div>
+        </li>
+
+        <li class="cd-h-timeline__event text-component">
+          <div class="cd-h-timeline__event-content container">
+            <h2>A cultura sob a ditadura militar</h2>
+            <em>1980</em>
+            <p>Apesar da censura, artistas usam a música, o teatro e o cinema para criticar o regime. A cultura torna-se um espaço de resistência e expressão política.</p>
+          </div>
+        </li>
+
+        <li class="cd-h-timeline__event text-component">
+          <div class="cd-h-timeline__event-content container">
+            <h2>Globalização e privatização da mídia</h2>
+            <em>1990</em>
+            <p>As grandes emissoras, como a Rede Globo, se consolidam. O consumo cultural se torna mais massificado, com forte influência internacional.</p>
+          </div>
+        </li>
+
+        <li class="cd-h-timeline__event text-component">
+          <div class="cd-h-timeline__event-content container">
+            <h2>Avanço da internet e cultura digital</h2>
+            <em>2000</em>
+            <p>A internet muda a forma de produzir e consumir cultura. Surgem blogs, fóruns e plataformas de streaming, ampliando o acesso à informação e à arte.</p>
+          </div>
+        </li>
+
+        <li class="cd-h-timeline__event text-component">
+          <div class="cd-h-timeline__event-content container">
+            <h2>Popularização das redes sociais</h2>
+            <em>2010</em>
+            <p>Plataformas como YouTube, Facebook e Instagram permitem que qualquer pessoa produza e compartilhe conteúdo cultural, quebrando o domínio das grandes mídias.</p>
+          </div>
+        </li>
+
+        <li class="cd-h-timeline__event text-component">
+          <div class="cd-h-timeline__event-content container">
+            <h2>Cultura digital e streaming no auge</h2>
+            <em>2020</em>
+            <p>O consumo cultural se torna quase totalmente digital, com destaque para Netflix, Spotify e TikTok. A produção cultural se torna mais democrática e globalizada.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+</section>
+
+<section id="mapa">
+  <h2 class="section-title">Mapa Interativo das Desigualdades</h2>
+  <h3 class="section-subtitle">Diferenças regionais no acesso e consumo de produtos culturais</h3>
+
+  <div id="map"></div>
+</section>
+
+<footer id="footer">
+  <div class="footer-container">
+    <p>&copy; 2025 Sociologia — Projeto Escolar sobre Indústria Cultural no Brasil</p>
+    <p>Desenvolvido por <strong>Ketlyn Alberti, Hannah De Castro, Izabelle Nataly</strong></p>
+  </div>
+</footer>
+
+<script src="util.js"></script>
+<script src="swipe-contend.js"></script> 
+<script src="main.js"></script>
+<script src="script.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+  // Cria o mapa centralizado no Brasil
+  const map = L.map('map').setView([-14.235, -51.9253], 4);
+
+  // Camada base do OpenStreetMap
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
+
+  // Função para criar marcadores coloridos
+  function criarMarcador(lat, lng, texto, cor) {
+    const icon = L.divIcon({
+      className: 'custom-marker',
+      html: `<div style="
+        background-color: ${cor};
+        width: 14px; height: 14px;
+        border-radius: 50%;
+        border: 2px solid white;
+        box-shadow: 0 0 5px rgba(0,0,0,0.3);
+      "></div>`,
+      iconSize: [14, 14]
+    });
+    L.marker([lat, lng], { icon }).addTo(map).bindPopup(texto);
+  }
+
+  // Marcadores — um por região
+  criarMarcador(-3.1190, -60.0217, "<b>Manaus (AM)</b><br>Dificuldades no acesso a cinemas e museus.", "red");
+  criarMarcador(-12.9714, -38.5014, "<b>Salvador (BA)</b><br>Acesso intermediário, concentrado nas áreas urbanas.", "orange");
+  criarMarcador(-15.8267, -47.9218, "<b>Brasília (DF)</b><br>Acesso moderado, desigual entre regiões administrativas.", "orange");
+  criarMarcador(-23.5505, -46.6333, "<b>São Paulo (SP)</b><br>Alta concentração de centros culturais.", "green");
+  criarMarcador(-30.0346, -51.2177, "<b>Porto Alegre (RS)</b><br>Acesso reduzido fora do centro urbano.", "red");
+</script>
+</body>
+
+</html>

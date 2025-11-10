@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 5px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f1ed;
+  margin-right: 50px;
+}
+
+::selection {
+  padding: 28px 8%;
+}
+.btn-default {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #710014;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 600;
+  box-shadow: 0px 0px 10px 2px rgba(46, 22, 22, 0.1);
+  cursor: pointer;
+  transition: background-color .3s ease;
+  ;
+}
+
+.btn-default:hover {
+  background-color: #a72038;
+  color: #fff;
+}
+
+/* ======== RODAPÉ ======== */
+#footer {
+  background: rgba(255, 255, 255, 0.8); /* branco translúcido */
+  backdrop-filter: blur(10px); /* efeito vidro fosco */
+  color: #333;
+  text-align: center;
+  padding: 30px 15px;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  border-top: 2px solid rgba(255, 0, 0, 0.3); /* linha vermelha suave */
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1); /* leve sombra */
+  transition: all 0.3s ease;
+}
+
+#footer .footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#footer strong {
+  color: #d00000; /* vermelho vibrante */
+  font-weight: 600;
+}
+
+#footer p {
+  margin: 5px 0;
+}
+
+#footer:hover {
+  background: rgba(255, 255, 255, 0.9);
+  border-top-color: #ff1a1a; /* destaque ao passar o mouse */
+}
+
+@media (max-width: 600px) {
+  #footer {
+    font-size: 0.85rem;
+    padding: 20px 10px;
+  }
+}
+/* --- CORRIGE O ESPAÇAMENTO ENTRE O MAPA E O RODAPÉ --- */
+#mapa {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+#footer {
+  margin-top: 0 !important;
+}
+
+/* Garante que o body e o main não criem espaço extra */
+body, main {
+  margin: 0;
+  padding: 0;
+}
