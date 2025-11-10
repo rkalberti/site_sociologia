@@ -167,3 +167,20 @@
     font-size: 0.95em; /* ajusta tamanho do texto */
   }
 }
+@media (max-width: 768px) {
+  .cd-h-timeline__container {
+    overflow-x: auto;
+    padding: 10px;
+  }
+
+  .cd-h-timeline__dates ol {
+    display: flex;
+    flex-wrap: nowrap;
+    width: max-content;
+  }
+
+  .cd-h-timeline__event-content {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
