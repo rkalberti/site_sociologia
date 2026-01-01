@@ -44,5 +44,5 @@ Este projeto utiliza o [CodyHouse Framework](https://github.com/CodyHouse/codyho
 Certifique-se de incluir os seguintes arquivos para o funcionamento correto:
 
 ```html
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="linhadotempo.css">
 <script src="util.js"></script>
