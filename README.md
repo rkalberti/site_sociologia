@@ -41,8 +41,8 @@ Parte do desenvolvimento da **landing page responsiva** foi feita com base em um
 ## ⚙️ Dependências
 
 Este projeto utiliza o [CodyHouse Framework](https://github.com/CodyHouse/codyhouse-framework).  
-Certifique-se de incluir os seguintes arquivos para o funcionamento correto:
+Para o funcionamento correto da linha do tempo, é necessário incluir os arquivos abaixo:
 
 ```html
-<link rel="stylesheet" href="linhadotempo.css">
-<script src="util.js"></script>
+<link rel="stylesheet" href="css/linhadotempo.css">
+<script src="javascript/util.js"></script>
