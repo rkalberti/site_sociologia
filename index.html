@@ -261,7 +261,7 @@
   attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
 
-  // Função para criar marcadores coloridos
+  // Função para criar marcadores
   function criarMarcador(lat, lng, texto, cor) {
     const icon = L.divIcon({
       className: 'custom-marker',
@@ -277,7 +277,7 @@
     L.marker([lat, lng], { icon }).addTo(map).bindPopup(texto);
   }
 
-  // Marcadores — um por região
+  // Marcadores — por região
   criarMarcador(-3.1190, -60.0217, "<b>Manaus (AM)</b><br>Dificuldades no acesso a cinemas e museus.", "red");
   criarMarcador(-12.9714, -38.5014, "<b>Salvador (BA)</b><br>Acesso intermediário, concentrado nas áreas urbanas.", "orange");
   criarMarcador(-15.8267, -47.9218, "<b>Brasília (DF)</b><br>Acesso moderado, desigual entre regiões administrativas.", "orange");
