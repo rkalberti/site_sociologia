@@ -55,7 +55,8 @@
   margin-right: 6px;
   border-radius: 50%;
 }
-/* ======== AJUSTE DO MAPA ======== */
+
+
 #mapa {
   margin-bottom: 0; /* tira o espaço extra da section */
   padding-bottom: 40px; /* só um respiro pequeno */
@@ -63,14 +64,13 @@
 
 #map {
   width: 100%;
-  height: 400px; /* altura moderada pra desktop */
+  height: 400px;
   max-width: 1000px;
   margin: 0 auto;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-/* Ajuste automático pra telas menores */
 @media (max-width: 768px) {
   #map {
     height: 300px;
