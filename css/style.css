@@ -37,7 +37,7 @@ body {
 
 /* Radapé */
 #footer {
-  background: rgba(255, 255, 255, 0.8); /* branco translúcido */
+  background: rgba(255, 255, 255, 0.8); 
   backdrop-filter: blur(10px); 
   color: #333;
   text-align: center;
