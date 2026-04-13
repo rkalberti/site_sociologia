@@ -36,7 +36,7 @@
   line-height: 1.6;
   overflow: hidden;
   display: flex;
-  flex-direction: column; /* tudo em coluna */
+  flex-direction: column;
   gap: 20px;
 }
 
