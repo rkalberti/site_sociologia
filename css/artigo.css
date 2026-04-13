@@ -17,7 +17,6 @@
   font-weight: normal;
 }
 
-/* ======== CONTAINER ======== */
 .artigo-container {
   display: flex;
   flex-direction: column;
@@ -26,7 +25,7 @@
   margin: 0 auto;
 }
 
-/* ======== BLOCOS ======== */
+/* blocos do artigo */
 .artigo-bloco {
   background: #fff;
   border-radius: 12px;
@@ -41,7 +40,7 @@
   gap: 20px;
 }
 
-/* ======== TÍTULOS E PARÁGRAFOS ======== */
+
 .artigo-bloco h4 {
   margin-top: 0;
   margin-bottom: 10px;
@@ -56,7 +55,7 @@
   color: #444;
 }
 
-/* ======== IMAGENS ======== */
+/* Parte das imagens */
 .artigo-bloco img {
   width: 100%;
   height: auto;
@@ -65,7 +64,6 @@
   margin-bottom: 15px;
 }
 
-/* ======== GARANTE QUE O TEXTO NÃO SUMA ======== */
 .artigo-bloco h4,
 .artigo-bloco p {
   flex: none;
@@ -74,7 +72,8 @@
   z-index: 1;
 }
 
-/* ======== MOBILE (continua igual) ======== */
+
+/* Adaptação mobile */
 @media (max-width: 767px) {
   .artigo-container {
     gap: 30px;
