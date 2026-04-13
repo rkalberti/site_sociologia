@@ -58,8 +58,8 @@
 
 
 #mapa {
-  margin-bottom: 0; /* tira o espaço extra da section */
-  padding-bottom: 40px; /* só um respiro pequeno */
+  margin-bottom: 0;
+  padding-bottom: 40px;
 }
 
 #map {
